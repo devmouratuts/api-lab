@@ -23,7 +23,7 @@ route = routers.DefaultRouter()
 route.register(r'labapp', labappviewsets.LabAppViewSet, basename="Labapp")
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    #path('admin/', admin.site.urls),
     path('cadastro/', include(route.urls)),
     
 
